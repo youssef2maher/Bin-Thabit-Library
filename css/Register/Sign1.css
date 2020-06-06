@@ -1,0 +1,103 @@
+/**************** Sign Page Design *****************/
+
+
+/* Fonts */
+
+@font-face {
+    src: url(../../font/HandWriting1/HANDM___.TTF);
+    font-family: hand;
+}
+
+
+
+
+/* Body Design */
+
+body {
+    
+    background-image: url(../../img/space11.jpg);
+    background-size: 1365px;
+    background-position-x: center;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+/* Sign Div Design */
+
+.sign {
+    display: flex;
+}
+
+
+
+
+
+/* Sign in Design */
+
+.signin {
+    margin: 160px 0 0 280px;
+}
+
+
+/* Header Design */
+
+h1 {
+    margin: 0 0 0 0 ;
+    font-family: hand;
+    font-size: 50px;
+}
+
+/* Sign in Design */
+
+.sign .signin form {
+    margin: 50px 0 0 0;
+}
+
+
+
+
+
+
+
+
+/* Sign up Design */
+
+.signup {
+    margin: 130px 0 0 250px;
+}
+
+
+
+
+
+/* Form Design */
+form {
+    margin: 0 0 0 0;
+}
+
+form input {
+    margin: 10px 0 0 0;
+    width: 300px;
+    height: 65px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px grey;
+    font-family: hand;
+    font-size: 22px;
+}
+
+form .submit {
+    margin: 30px 0 0 0;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+form input:focus {
+    outline: none;
+}

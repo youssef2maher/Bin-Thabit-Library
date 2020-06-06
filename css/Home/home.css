@@ -1,0 +1,989 @@
+/********************* Home Page Design ***********************/
+
+/* Fonts */
+
+@font-face {
+    src: url(../../font/HandWriting1/HANDM___.TTF);
+    font-family: hand;
+}
+
+@font-face {
+    src: url(../../font/aramis-italic/Aramis\ Italic.ttf);
+    font-family: aramis;
+}
+
+@font-face {
+    src: url(../../font/titillium-web/TitilliumWeb-Light.ttf);
+    font-family: number;
+}
+
+
+/* Body Design */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* Scroll Bar Design */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 27, 27);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(112, 11, 11);
+}
+
+
+
+/* Container Settings */
+
+.container {
+    width: 1178px;
+    margin: auto;
+}
+
+
+
+
+
+/* Navbar Design */
+
+.navbar {
+    display: flex;
+    width: 1356px;
+    height: 50px;
+    background-color: rgb(37, 12, 2);
+}
+
+.navbar .logo {
+    margin: 10px 0 0 20px;
+    float: left;
+    color: #FFF;
+    font-family: hand;
+}
+
+.navbar .links {
+    margin: 0 0 0 750px;
+    float: right;
+}
+
+.navbar .links a {
+    float: right;
+    margin: 15px 40px 0 0;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.navbar .links .sign {
+    margin: 0;
+    padding: 13px 20px 0 20px;
+    height: 35px;
+    border-left: solid 5px rgb(74, 74, 100); 
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .links .sign:hover {
+    background-color: rgb(151, 13, 13);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Category Bar Design */
+
+.catbar {
+    padding: 0 0px 0 0px;
+    display: flex;
+    float: right;
+    height: 70px;
+    width: 1356px;
+    background-color: rgb(216, 27, 27);
+}
+
+.catbar .cat {
+    height: 70px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-left: solid 1px #FFF;
+    color: #FFF;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.catbar .cat h1 {
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: center;
+    height: 50px;
+}
+
+.catbar .cat h1:hover {
+    background-color: #FFF;
+    color: rgb(216, 27, 27);
+}
+
+.catbar .cat a {
+    margin: 0px 0 0 0;
+    padding: 20px 0 0 0px;
+    text-align: center;
+    width: 190px;
+    height: 50px;
+    float: left;
+    font-size: 25px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.catbar .cat a:hover {
+    background-color: #FFF;
+    color: rgb(216, 27, 27);
+    border-left: solid 5px rgb(216, 27, 27);
+    border-right: solid 5px rgb(216, 27, 27);
+}
+
+
+/* Books Section Design */
+.catbar .book:hover {
+    height: 215px;
+    background-color: rgb(216, 27, 27);
+}
+
+
+/* Literature Section Desing */
+.catbar .literature:hover {
+    height: 355px;
+    background-color: rgb(216, 27, 27);
+}
+
+
+/* Newspapers Section Desing */
+.catbar .newspaper:hover {
+    height: 285px;
+    background-color: rgb(216, 27, 27);
+}
+
+
+/* Maps Section Desing */
+.catbar .map:hover {
+    height: 425px;
+    background-color: rgb(216, 27, 27);
+}
+
+
+/* Search Bar Design */
+.catbar .search {
+    float: left;
+    width: 361px;
+    height: 50px;
+}
+
+.catbar .search form .searchInput {
+    float: left;
+    margin: 10px 0 0 5px;
+    padding: 0 0 0 10px;
+    width: 260px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    font-size: 23px;
+}
+
+.catbar .search form .searchInput:focus {
+    outline: none;
+}
+
+.catbar .search form .submit {
+    float: left;
+    margin: -8px 0 0 5px;
+    width: 60px;
+    height: 50px;
+    border: none;
+    background-color: #FFF;
+    color: rgb(216, 27, 27);
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(216, 27, 27) inset;
+    cursor: pointer;
+}
+
+.catbar .search form .submit:focus {
+    outline: none;
+}
+
+.catbar .search form .submit:active {
+    box-shadow: 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carousel Design */
+
+.carousel {
+    margin: 100px 0 0 55px;
+    width: 1250px;
+    height: 480px;
+    border: solid 5px rgb(216, 27, 27);
+    overflow: hidden;
+    background-image: url(../../img/carousel0.jpg);
+    background-size: cover;
+    animation: carousel 20s infinite;
+}
+
+@keyframes carousel{
+    0%  {background-image: url(../../img/carousel0.jpg);}
+    25% {background-image: url(../../img/carousel0.jpg);}
+    50% {background-image: url(../../img/carousel1.jpg);}
+    75% {background-image: url(../../img/carousel1.jpg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Events and Programs Section Design */
+
+.event {
+    margin: 200px 0 100px 0px;
+    padding: 20px 0 0 80px;
+    width: 1276px;
+    height: 1000px;
+    background-color: rgb(252, 244, 244);
+}
+
+.event h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(216, 27, 27);
+    font-family: aramis;
+}
+
+.event .ev1 {
+    float: left;
+    width: 600px;
+    height: 400px;
+    border: solid 3px red;
+    background-image: url(../../img/event0.jpg);
+    background-size: cover;
+}
+
+.event .ev2 {
+    float: left;
+    width: 300px;
+    height: 150px;
+    border: solid 3px red;
+    border-left: none;
+    border-right: none;
+    background-image: url(../../img/event1.jpg);
+    background-size: cover;
+}
+
+.event .ev3 {
+    float: left;
+    width: 300px;
+    height: 594px;
+    border: solid 3px red;
+    background-image: url(../../img/event4.jpg);
+    background-size: cover;
+    background-position-x: -255px;
+    background-repeat: no-repeat;
+}
+
+.event .ev4 {
+    float: left;
+    margin: -444px 0 0 606px;
+    width: 300px;
+    height: 247px;
+    border: solid 3px red;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-image: url(../../img/event3.jpg);
+    background-size: cover;
+}
+
+.event .ev5 {
+    margin: -194px 0 0 330px;
+    float: left;
+    width: 573px;
+    height: 191px;
+    border: solid 3px red;
+    border-top: none;
+    border-right: none;
+    background-image: url(../../img/event6.jpg);
+    background-position-y: center;
+    background-size: cover;
+}
+
+.event .ev6 {
+    margin: -194px 0 0 0;
+    float: left;
+    width: 327px;
+    height: 191px;
+    border: solid 3px red;
+    border-right: none;
+    border-top: none;
+    background-image: url(../../img/event5.jpg);
+    background-size: cover;
+}
+
+.event .evh {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 1px 1px red;
+}
+
+.event .ev1 h1 {
+    margin: 300px 0 0 0;
+}
+
+.event .ev2 h1 {
+    margin: 0px 0 0 40px;
+    font-size: 25px;
+}
+
+.event .ev3 h1 {
+    margin: 0px 0 0 20px;
+    font-size: 50px;
+    text-shadow: 2px 2px red;
+}
+
+.event .ev4 h1 {
+    margin: 20px 200px 0 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px red;
+}
+
+.event .ev4 h1 span {
+    font-family: hand;
+    font-size: 35px;
+}
+
+.event .ev5 h1 {
+    margin: 40px 0px 0 350px;
+    font-size: 30px;
+    text-shadow: 2px 2px red;
+}
+
+.event .ev6 h1 {
+    margin: 40px 0px 0 0px;
+    font-size: 35px;
+    text-shadow: 2px 2px red;
+}
+
+
+.event .endTitle {
+    float: left;
+    margin: 50px 0 0 100px;
+    font-size: 40px;
+}
+
+.event .endTitle span {
+    font-family: hand;
+    font-size: 45px;
+}
+
+.event a button {
+    float: left;
+    margin: 40px 0 0 470px;
+    width: 250px;
+    height: 65px;
+    background-color: rgb(241, 11, 11);
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.event a button:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Book You May Like Section Design */
+
+.like {
+    margin: 0 0 200px 0;
+}
+
+.like .title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: red;
+    text-shadow: 1px 1px rgb(218, 178, 178);
+}
+
+.like .books {
+    display: flex;
+    margin: 50px 0 20px 0;
+}
+
+.like .book {
+    margin: 0 0 0 100px;
+    padding: 0px 0 0 0;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border: solid 5px red;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.like .book:hover {
+    box-shadow: 0 0 500px black inset;
+}
+
+.like .book h1 {
+    visibility: hidden;
+    margin: 100px 0 0 20px;
+    color: #FFF;
+    font-size: 70px;
+    text-shadow: 5px 5px 2px rgb(85, 0, 0);
+    font-family: number;
+}
+
+.like .book .sale {
+    margin: 30px 0 0 30px;
+    font-size: 35px;
+    text-decoration-line: line-through;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgb(85, 0, 0);
+}
+
+.like .book:hover > h1 {
+    visibility: visible;
+}
+
+
+.like .book1 {
+    background-image: url(../../img/book0.jpg);
+}
+
+.like .book2 {
+    background-image: url(../../img/book1.jpg);
+}
+
+.like .book3 {
+    background-image: url(../../img/book2.jpg);
+}
+
+.like .book4 {
+    background-image: url(../../img/book3.jpg);
+}
+
+
+.like a button {
+    float: left;
+    margin: 40px 0 0 575px;
+    width: 200px;
+    height: 55px;
+    background-color: rgb(241, 11, 11);
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.like a button:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Best Sellers Section Design */
+
+.best {
+    margin: 0px 0 200px 0;
+}
+
+.best .title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: red;
+    text-shadow: 1px 1px rgb(218, 178, 178);
+}
+
+.best .books {
+    display: flex;
+    margin: 50px 0 20px 0;
+}
+
+.best .book {
+    margin: 0 0 0 100px;
+    padding: 0px 0 0 0;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border: solid 5px red;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.best .book:hover {
+    box-shadow: 0 0 500px black inset;
+}
+
+.best .book h1 {
+    visibility: hidden;
+    margin: 100px 0 0 20px;
+    color: #FFF;
+    font-size: 70px;
+    text-shadow: 5px 5px 2px rgb(85, 0, 0);
+    font-family: number;
+}
+
+.best .book .sale {
+    margin: 30px 0 0 30px;
+    font-size: 35px;
+    text-decoration-line: line-through;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgb(85, 0, 0);
+}
+
+.best .book:hover > h1 {
+    visibility: visible;
+}
+
+
+.best .book1 {
+    background-image: url(../../img/book5.jpg);
+}
+
+.best .book2 {
+    background-image: url(../../img/book6.jpg);
+}
+
+.best .book3 {
+    background-image: url(../../img/book7.jpg);
+}
+
+.best .book4 {
+    background-image: url(../../img/book8.jpg);
+}
+
+
+.best a button {
+    float: left;
+    margin: 40px 0 0 575px;
+    width: 200px;
+    height: 55px;
+    background-color: rgb(241, 11, 11);
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.best a button:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Social Media Bar Design */
+
+.social {
+    margin: 250px 0 150px 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(216, 27, 27);
+    display: flex;
+}
+
+.social h1 {
+    margin: 20px 0 0 100px;
+    color: #FFF;
+    font-family: hand;
+}
+
+.social h2 {
+    margin: 18px 30px 0 730px;
+    float: right;
+    color: #FFF;
+    font-family: number;   
+    font-size: 30px;
+}
+
+.social .fab {
+    margin: 20px 0 0 20px;
+    font-size: 30px;
+    float: right;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Best Sellers in Novels Section Design */
+
+.novel {
+    margin: 0px 0 200px 0;
+}
+
+.novel .title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: red;
+    text-shadow: 1px 1px rgb(218, 178, 178);
+}
+
+.novel .books {
+    display: flex;
+    margin: 50px 0 20px 0;
+}
+
+.novel .book {
+    margin: 0 0 0 100px;
+    padding: 0px 0 0 0;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border: solid 5px red;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.novel .book:hover {
+    box-shadow: 0 0 500px black inset;
+}
+
+.novel .book h1 {
+    visibility: hidden;
+    margin: 100px 0 0 20px;
+    color: #FFF;
+    font-size: 70px;
+    text-shadow: 5px 5px 2px rgb(85, 0, 0);
+    font-family: number;
+}
+
+.novel .book .sale {
+    margin: 30px 0 0 30px;
+    font-size: 35px;
+    text-decoration-line: line-through;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgb(85, 0, 0);
+}
+
+.novel .book:hover > h1 {
+    visibility: visible;
+}
+
+
+.novel .book1 {
+    background-image: url(../../img/novel0.jpg);
+}
+
+.novel .book2 {
+    background-image: url(../../img/novel1.jpg);
+}
+
+.novel .book3 {
+    background-image: url(../../img/novel2.jpg);
+}
+
+.novel .book4 {
+    background-image: url(../../img/novel3.jpg);
+}
+
+
+.novel a button {
+    float: left;
+    margin: 40px 0 0 575px;
+    width: 200px;
+    height: 55px;
+    background-color: rgb(241, 11, 11);
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.novel a button:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Arabian Literature Section Design */
+
+.arab {
+    margin: 0px 0 200px 0;
+}
+
+.arab .title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: red;
+    text-shadow: 1px 1px rgb(218, 178, 178);
+}
+
+.arab .books {
+    display: flex;
+    margin: 50px 0 20px 0;
+}
+
+.arab .book {
+    margin: 0 0 0 100px;
+    padding: 0px 0 0 0;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border: solid 5px red;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.arab .book:hover {
+    box-shadow: 0 0 500px black inset;
+}
+
+.arab .book h1 {
+    visibility: hidden;
+    margin: 100px 0 0 20px;
+    color: #FFF;
+    font-size: 70px;
+    text-shadow: 5px 5px 2px rgb(85, 0, 0);
+    font-family: number;
+}
+
+.arab .book .sale {
+    margin: 30px 0 0 30px;
+    font-size: 35px;
+    text-decoration-line: line-through;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgb(85, 0, 0);
+}
+
+.arab .book:hover > h1 {
+    visibility: visible;
+}
+
+
+.arab .book1 {
+    background-image: url(../../img/arab0.jpg);
+}
+
+.arab .book2 {
+    background-image: url(../../img/arab1.jpg);
+}
+
+.arab .book3 {
+    background-image: url(../../img/arab2.jpg);
+}
+
+.arab .book4 {
+    background-image: url(../../img/arab3.jpg);
+}
+
+
+.arab a button {
+    float: left;
+    margin: 40px 0 0 575px;
+    width: 200px;
+    height: 55px;
+    background-color: rgb(241, 11, 11);
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.arab a button:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Desing */
+
+.footer {
+    height: 580px;
+    width: 100%;
+    background-color: rgb(216, 27, 27);
+}
+
+.footer .top {
+    width: 99.7%;
+    height: 200px;
+    border: solid 2px black;
+    background-color: rgb(136, 16, 16);
+    box-shadow: 0 0 5px black inset;
+}
+
+.footer .top h1 {
+    text-align: center;
+    font-size: 100px;
+    color: #FFF;
+    font-family: hand;
+}
+
+.footer .footerInfo {
+    float: left;
+    margin-right: 150px;
+    margin-top: 70px;
+}
+
+.footer .footerInfo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.footer .footerInfo a {
+    text-decoration: none;
+}
+
+.footer .footerInfo h2 {
+    color: #FFF;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.footer .rights {
+    margin-top: 300px;
+    text-align: center;
+    color: #FFF;
+}
+
+.footer .rights span {
+    font-family: hand;
+}
